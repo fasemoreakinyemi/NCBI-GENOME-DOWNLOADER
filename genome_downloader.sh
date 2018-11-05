@@ -4,6 +4,7 @@ main(){
 	set_variables
 	create_folders
 	download_files
+	create_log
 #	make_unwritable
 }
 set_variables(){
@@ -36,6 +37,13 @@ download_files(){
 			mv $INPUT_FOLDER/$FASTA ${INPUT_FOLDER}/$(basename $FASTA .fna).fa
 		done
 	fi
+}
+
+create_log(){
+	touch $ROOT_FOLDER_NAME/log.out
+	echo "#" $DATE $SOURCE $(echo $NAME | sed "s/_/\ /g") \
+     > $ROOT_FOLDER_NAME/log.out
+
 }
 
 make_unwritable(){

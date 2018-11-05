@@ -1,6 +1,7 @@
 # NCBI-GENOME-DOWNLOADER
 
-Based on [1]Project Generator scripts from [2]Konrad Förstner
+Based on [Project Generator][1] scripts from [Konrad Förstner][2]
+
 
 [1]:https://github.com/konrad/project_generator
 [2]:https://github.com/konrad
